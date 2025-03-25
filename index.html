@@ -1,1 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Garage | 2017 Chevy Impala V6</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-icon">
+                <i class="fas fa-cog fa-spin"></i>
+            </div>
+            <div class="loader-text">LOADING GARAGE</div>
+            <div class="loader-progress">
+                <div class="loader-progress-bar"></div>
+            </div>
+        </div>
+    </div>
 
+    <header>
+        <div class="logo">
+            <i class="fas fa-car"></i>
+            <h1>VIRTUAL<span>GARAGE</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#overview" class="active">Overview</a></li>
+                <li><a href="#specs">Specs</a></li>
+                <li><a href="#parts">Parts</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#maintenance">Maintenance</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>2017 CHEVY IMPALA V6</h1>
+                <p>Your virtual workspace for maintenance, upgrades, and research</p>
+                <div class="hero-buttons">
+                    <button class="btn primary">Explore Specs</button>
+                    <button class="btn secondary">View Maintenance</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hldnklMjBpbXBhbGF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60" alt="2017 Chevy Impala">
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-value">305</span>
+                    <span class="stat-label">HORSEPOWER</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">3.6L</span>
+                    <span class="stat-label">V6 ENGINE</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">28</span>
+                    <span class="stat-label">MPG HWY</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="overview" class="section">
+            <div class="section-header">
+                <h2>OVERVIEW</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="overview-content">
+                <div class="overview-text">
+                    <p>The 2017 Chevrolet Impala is a full-size sedan that combines performance, comfort, and style. With its powerful V6 engine, spacious interior, and modern technology features, the Impala delivers an exceptional driving experience.</p>
+                    <p>This virtual garage provides comprehensive information about your vehicle, including specifications, maintenance schedules, parts catalog, and required tools for DIY projects.</p>
+                </div>
+                <div class="overview-features">
+                    <div class="feature">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <h3>Performance</h3>
+                        <p>3.6L V6 engine with 305 horsepower and 264 lb-ft of torque</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-car-battery"></i>
+                        <h3>Electrical</h3>
+                        <p>Advanced electrical system with 150-amp alternator</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-cogs"></i>
+                        <h3>Drivetrain</h3>
+                        <p>6-speed automatic transmission with front-wheel drive</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-gas-pump"></i>
+                        <h3>Fuel Economy</h3>
+                        <p>18 MPG city / 28 MPG highway / 22 MPG combined</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="specs" class="section">
+            <div class="section-header">
+                <h2>SPECIFICATIONS</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="specs-container">
+                <div class="specs-tabs">
+                    <button class="tab-btn active" data-tab="engine">Engine</button>
+                    <button class="tab-btn" data-tab="dimensions">Dimensions</button>
+                    <button class="tab-btn" data-tab="performance">Performance</button>
+                    <button class="tab-btn" data-tab="electrical">Electrical</button>
+                    <button class="tab-btn" data-tab="suspension">Suspension</button>
+                </div>
+                <div class="specs-content">
+                    <div class="tab-content active" id="engine">
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <div class="spec-name">Engine Type</div>
+                                <div class="spec-value">3.6L V6 DOHC</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-name">Displacement</div>
+                                <div class="spec-value">3.6L (3,564 cc)</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-name">Horsepower</div>
+                                <div class="spec-value">305 hp @ 6,800 rpm</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-name">Torque</div>
+                                <div class="spec-value">264 lb-ft @ 5,200 rpm</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-name">Compression Ratio</div>
+                                <div class="spec-value">11.5:1</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-name">Fuel System</div>
+                                <div class="spec-value">Direct Injection</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-name">Cylinder Configuration</div>
+                                <div class="spec-value">V6</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-name">Valvetrain</div>
+                                <div class="spec-value">DOHC, 4 valves per cylinder</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="dimensions">
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <div class="spec-name">Length</div>
+                                <div class="spec-value">201.3 in (5,113 mm)</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-name">Width</div>
+                                <div class="spec-value">73.0 in (1,854 mm)</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-name">Height</div>
+                                <div class="spec-value">58.9 in (1,496 mm)</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-name">Wheelbase</div>
+                                <div class="spec-value">111.7 in (2,837 mm)</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-name">Curb Weight</div>
+                                <div class="spec-value">3,800 lbs (1,724 kg)</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-name">Ground Clearance</div>
+                                <div class="spec-value">5.9 in (150 mm)</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-name">Trunk Capacity</div>
+                                <div class="spec-value">18.8 cu ft (532 L)</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-name">Fuel Tank</div>
+                                <div class="spec-value">18.5 gal (70.0 L)</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="performance">
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <div class="spec-name">0-60 mph</div>
+                                <div class="spec-value">6.0 seconds</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-name">Top Speed</div>
+                                <div class="spec-value">149 mph (240 km/h)</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-name">Transmission</div>
+                                <div class="spec-value">6-speed automatic</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-name">Drivetrain</div>
+                                <div class="spec-value">Front-wheel drive</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-name">Fuel Economy (City)</div>
+                                <div class="spec-value">18 mpg</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-name">Fuel Economy (Highway)</div>
+                                <div class="spec-value">28 mpg</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-name">Fuel Economy (Combined)</div>
+                                <div class="spec-value">22 mpg</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-name">Braking (60-0 mph)</div>
+                                <div class="spec-value">120 ft (36.6 m)</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="electrical">
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <div class="spec-name">Battery</div>
+                                <div class="spec-value">12V, 70AH, 512 CCA</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-name">Alternator</div>
+                                <div class="spec-value">150 Amp</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-name">Starter</div>
+                                <div class="spec-value">1.4 kW</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-name">Headlights</div>
+                                <div class="spec-value">Halogen/HID (trim dependent)</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-name">Spark Plugs</div>
+                                <div class="spec-value">Iridium-tipped</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-name">Ignition System</div>
+                                <div class="spec-value">Electronic Ignition</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-name">Fuse Box Locations</div>
+                                <div class="spec-value">Engine Bay, Driver Side Dashboard</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-name">Audio System</div>
+                                <div class="spec-value">6-speaker system (base)</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="suspension">
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <div class="spec-name">Front Suspension</div>
+                                <div class="spec-value">MacPherson Strut</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-name">Rear Suspension</div>
+                                <div class="spec-value">Multi-link</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-name">Front Stabilizer Bar</div>
+                                <div class="spec-value">26 mm</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-name">Rear Stabilizer Bar</div>
+                                <div class="spec-value">24 mm</div>
+                            </div>
+                                                        <div class="spec-item">
+                                <div class="spec-name">Steering Type</div>
+                                <div class="spec-value">Electric Power Steering</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-name">Turning Circle</div>
+                                <div class="spec-value">38.8 ft (11.8 m)</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-name">Front Brakes</div>
+                                <div class="spec-value">Ventilated Disc, 12.6 in (320 mm)</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-name">Rear Brakes</div>
+                                <div class="spec-value">Solid Disc, 12.4 in (315 mm)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="parts" class="section">
+            <div class="section-header">
+                <h2>PARTS CATALOG</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="parts-search">
+                <input type="text" id="parts-search-input" placeholder="Search for parts...">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="parts-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="engine">Engine</button>
+                <button class="filter-btn" data-filter="electrical">Electrical</button>
+                <button class="filter-btn" data-filter="suspension">Suspension</button>
+                <button class="filter-btn" data-filter="brakes">Brakes</button>
+                <button class="filter-btn" data-filter="interior">Interior</button>
+            </div>
+            <div class="parts-grid">
+                <div class="part-card" data-category="engine">
+                    <div class="part-image">
+                        <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2FyJTIwZW5naW5lfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="Air Filter">
+                    </div>
+                    <div class="part-info">
+                        <h3>Air Filter</h3>
+                        <p>OEM replacement air filter for 3.6L V6 engine</p>
+                        <div class="part-details">
+                            <span class="part-number">Part #: CH48957</span>
+                            <span class="part-price">$24.99</span>
+                        </div>
+                        <button class="btn secondary">View Details</button>
+                    </div>
+                </div>
+                <div class="part-card" data-category="engine">
+                    <div class="part-image">
+                        <img src="https://images.unsplash.com/photo-1635784063852-0af402e40c79?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8b2lsJTIwZmlsdGVyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="Oil Filter">
+                    </div>
+                    <div class="part-info">
+                        <h3>Oil Filter</h3>
+                        <p>Premium oil filter for maximum engine protection</p>
+                        <div class="part-details">
+                            <span class="part-number">Part #: CH67821</span>
+                            <span class="part-price">$12.99</span>
+                        </div>
+                        <button class="btn secondary">View Details</button>
+                    </div>
+                </div>
+                <div class="part-card" data-category="electrical">
+                    <div class="part-image">
+                        <img src="https://images.unsplash.com/photo-1619771914272-e3c1ba17ba4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FyJTIwYmF0dGVyeXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Battery">
+                    </div>
+                    <div class="part-info">
+                        <h3>Battery</h3>
+                        <p>12V 70AH 512 CCA maintenance-free battery</p>
+                        <div class="part-details">
+                            <span class="part-number">Part #: CH94532</span>
+                            <span class="part-price">$129.99</span>
+                        </div>
+                        <button class="btn secondary">View Details</button>
+                    </div>
+                </div>
+                <div class="part-card" data-category="brakes">
+                    <div class="part-image">
+                        <img src="https://images.unsplash.com/photo-1615486511484-92e172cc4fe0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnJha2UlMjBwYWRzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="Brake Pads">
+                    </div>
+                    <div class="part-info">
+                        <h3>Brake Pads (Front)</h3>
+                        <p>Ceramic brake pads for superior stopping power</p>
+                        <div class="part-details">
+                            <span class="part-number">Part #: CH78215</span>
+                            <span class="part-price">$64.99</span>
+                        </div>
+                        <button class="btn secondary">View Details</button>
+                    </div>
+                </div>
+                <div class="part-card" data-category="suspension">
+                    <div class="part-image">
+                        <img src="https://images.unsplash.com/photo-1600197145996-9ae8a2fee2ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FyJTIwc3VzcGVuc2lvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Shock Absorber">
+                    </div>
+                    <div class="part-info">
+                        <h3>Shock Absorber</h3>
+                        <p>Front shock absorber for improved handling</p>
+                        <div class="part-details">
+                            <span class="part-number">Part #: CH36542</span>
+                            <span class="part-price">$89.99</span>
+                        </div>
+                        <button class="btn secondary">View Details</button>
+                    </div>
+                </div>
+                <div class="part-card" data-category="interior">
+                    <div class="part-image">
+                        <img src="https://images.unsplash.com/photo-1583836631333-f7edccc231b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2FyJTIwaW50ZXJpb3J8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="Floor Mats">
+                    </div>
+                    <div class="part-info">
+                        <h3>All-Weather Floor Mats</h3>
+                        <p>Custom-fit all-weather floor mats (set of 4)</p>
+                        <div class="part-details">
+                            <span class="part-number">Part #: CH12478</span>
+                            <span class="part-price">$79.99</span>
+                        </div>
+                        <button class="btn secondary">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="parts-pagination">
+                <button class="pagination-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="pagination-btn active">1</button>
+                <button class="pagination-btn">2</button>
+                <button class="pagination-btn">3</button>
+                <button class="pagination-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <section id="tools" class="section">
+            <div class="section-header">
+                <h2>TOOLS REQUIRED</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="tools-categories">
+                <div class="tools-category">
+                    <div class="category-header">
+                        <i class="fas fa-wrench"></i>
+                        <h3>Basic Tools</h3>
+                    </div>
+                    <ul class="tools-list">
+                        <li>
+                            <span class="tool-name">Socket Set (Metric)</span>
+                            <span class="tool-desc">10mm to 19mm sockets with 3/8" drive</span>
+                        </li>
+                        <li>
+                            <span class="tool-name">Wrench Set (Metric)</span>
+                            <span class="tool-desc">8mm to 19mm combination wrenches</span>
+                        </li>
+                        <li>
+                            <span class="tool-name">Screwdriver Set</span>
+                            <span class="tool-desc">Phillips and flathead in various sizes</span>
+                        </li>
+                        <li>
+                            <span class="tool-name">Pliers Set</span>
+                            <span class="tool-desc">Needle-nose, slip-joint, and channel-lock</span>
+                        </li>
+                        <li>
+                            <span class="tool-name">Torque Wrench</span>
+                            <span class="tool-desc">3/8" drive, 10-80 ft-lbs range</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tools-category">
+                    <div class="category-header">
+                        <i class="fas fa-oil-can"></i>
+                        <h3>Fluid Service Tools</h3>
+                    </div>
+                    <ul class="tools-list">
+                        <li>
+                            <span class="tool-name">Oil Filter Wrench</span>
+                            <span class="tool-desc">For 3.6L V6 engine oil filter</span>
+                        </li>
+                        <li>
+                            <span class="tool-name">Oil Drain Pan</span>
+                            <span class="tool-desc">Minimum 6-quart capacity</span>
+                        </li>
+                        <li>
+                            <span class="tool-name">Funnel Set</span>
+                            <span class="tool-desc">Various sizes for different fluids</span>
+                        </li>
+                        <li>
+                            <span class="tool-name">Fluid Transfer Pump</span>
+                            <span class="tool-desc">For transmission fluid changes</span>
+                        </li>
+                        <li>
+                            <span class="tool-name">Brake Bleeder Kit</span>
+                            <span class="tool-desc">One-person brake bleeding system</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tools-category">
+                    <div class="category-header">
+                        <i class="fas fa-car-battery"></i>
+                        <h3>Electrical Tools</h3>
+                    </div>
+                    <ul class="tools-list">
+                        <li>
+                            <span class="tool-name">Digital Multimeter</span>
+                            <span class="tool-desc">For testing voltage, resistance, and continuity</span>
+                        </li>
+                        <li>
+                            <span class="tool-name">Wire Stripper/Crimper</span>
+                            <span class="tool-desc">For electrical repairs</span>
+                        </li>
+                        <li>
+                            <span class="tool-name">Battery Terminal Cleaner</span>
+                            <span class="tool-desc">For cleaning battery posts and terminals</span>
+                        </li>
+                        <li>
+                            <span class="tool-name">Test Light</span>
+                            <span class="tool-desc">For checking power in circuits</span>
+                        </li>
+                        <li>
+                            <span class="tool-name">OBD-II Scanner</span>
+                            <span class="tool-desc">For reading diagnostic trouble codes</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tools-category">
+                    <div class="category-header">
+                        <i class="fas fa-cogs"></i>
+                        <h3>Specialty Tools</h3>
+                    </div>
+                    <ul class="tools-list">
+                        <li>
+                            <span class="tool-name">Jack and Jack Stands</span>
+                            <span class="tool-desc">Rated for at least 2 tons</span>
+                        </li>
+                        <li>
+                            <span class="tool-name">Brake Caliper Tool</span>
+                            <span class="tool-desc">For compressing brake pistons</span>
+                        </li>
+                        <li>
+                            <span class="tool-name">Spark Plug Socket</span>
+                            <span class="tool-desc">5/8" with rubber insert</span>
+                        </li>
+                        <li>
+                            <span class="tool-name">Fuel Line Disconnect Tool</span>
+                            <span class="tool-desc">For safely disconnecting fuel lines</span>
+                        </li>
+                        <li>
+                            <span class="tool-name">Trim Removal Tools</span>
+                            <span class="tool-desc">For interior and exterior trim</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="maintenance" class="section">
+            <div class="section-header">
+                <h2>MAINTENANCE SCHEDULE</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="maintenance-timeline">
+                <div class="timeline-controls">
+                    <button class="timeline-btn active" data-interval="regular">Regular</button>
+                    <button class="timeline-btn" data-interval="severe">Severe Conditions</button>
+                </div>   
+              
